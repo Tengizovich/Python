@@ -1,0 +1,22 @@
+1.touch hey
+touch hello
+1.2 первый файл после создания уже с правами -rw-rw-r-
+второй 
+chmod u=rw-,g=---,o=--- hello
+chmod 600 hello
+2.sudo chown -R testuser:www-data links
+3.sudo useradd -s /bin/bash -m -d /home/new_user new_user
+sudo adduser hackerman
+sudo userdel hackerman
+4.sudo groupadd coolgroup
+sudo addgroup allgroup
+sudo chown new_user:coolgroup testfile
+sudo chgrp mi hw2
+groups testuser
+sudo usermod -a -G coolgroup testuser
+sudo usermod -aG sudo testuser
+sudo visudo
+testuser ALL=(ALL) NOPASSWD: ALL
+
+7.sudo visudo
+new_user ALL=(ALL:ALL) /usr/bin/passwd, /usr/bin/apt-get

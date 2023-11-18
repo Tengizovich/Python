@@ -1,0 +1,20 @@
+#!/bin/bash
+# Clear directory script
+
+if [ -d $1 ]
+	then
+		echo "Dir exists"
+	else
+		echo "No dir selected"
+		exit 2
+fi
+
+directory=$1
+
+read -p "Are you sure you want to delete the files? Y/N " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]];
+	then
+		find -name '*.bak' -delete -o -name '*.backup' -delete -o -name '*.tmp' -delete
+	echo "All those files have been deleted"
+fi

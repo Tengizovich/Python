@@ -1,0 +1,37 @@
+1.cat > 1.txt
+anigil
+echo polyariz > 2.txt
+
+cp 1.txt 2.txt
+ls
+mv 2.txt 3_new.txt
+
+2. cat > 3.txt
+legalay
+cat > 4.txt
+ofer
+mkdir temp-new
+pwd
+cp 3.txt
+cp 4.txt
+rm 3.txt
+rm -R temp-new
+cd..
+rm 1.txt
+rm 3_new.txt
+
+
+3. cat > file1.txt
+faillose
+cp file1.txt file2.txt
+ln -s file1.txt file3link.txt
+ln file1.txt 4fileln.txt
+
+rm file1.txt
+
+4.mv file2.txt file2_ymd.txt
+ln -s file2_ymd.txt file2_ymdln.txt
+mkdir temp-new/cp file2_ymdln.txt 
+
+
+

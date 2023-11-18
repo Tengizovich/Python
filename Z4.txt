@@ -1,0 +1,44 @@
+1.sudo apt-get update
+
+\
+ca-certificates \
+
+curl \
+
+gnupg \
+lsb-releasesudo apt-get install \
+
+ca-certificates \
+
+curl \
+
+gnupg \
+sudo mkdir -p /etc/apt/keyrings
+sudo apt istall curl
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o/etc/apt/keyrings/docker.gpg
+echo \
+
+> "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg]
+https://download.docker.com/linux/ubuntu \
+> $(lsb_release -cs) stable" | sudo tee /etc/apt/sourse.list.d/docker.list >/dev/null
+sudo apt-get update
+sudo docker run hello-world
+
+2. wget https://download.virtualbox.org/virtualbox/7.0.4./virtualbox-7.0.7.0.4-154605~Ubuntu~jammy amd64.deb
+dpkg -i virtualbox-7.0.7.0.4-154605~Ubuntu~jammy amd64.deb
+apt -f install
+dpkg -l | grep virtual
+sudo dpkg -r virtualbox-7.0
+
+3.snap search nginx
+sudo snap install nginxrtmp-minsikl
+sudo snap remove nginxrtmp-minsikl
+
+4.cd /etc
+sudo nano crontab
+*/3 *  *** bomberman  cd~; mkdir -p crontab_d; cd crontab_d; cat << TEST > file.txt
+
+5.sudo add-apt-repository ppa:_____/ppa
+sudo apt-get update
+sudo apt-get install ____
+sudo add-apt-repository --remove ppa:_____/ppa

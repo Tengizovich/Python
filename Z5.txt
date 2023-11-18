@@ -1,0 +1,22 @@
+1. ip a
+10.0.2.15/24
+cd/etc/netplan
+ls -al
+sudo nano /etc/netplan/*.yaml
+netplan try
+ping ya.ru
+
+2.sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+iptables -A INPUT -p icmp -j ACCEPT
+iptables -A INPUT -i icmp -j ACCEPT
+iptables -I INPUT -m state --state ESTABLISHED, RELATED -j ACCEPT
+sudo iptables -P INPUT DROP
+
+3.iptables -A INPUT -s 3.4.5.6 -j DROP
+
+4.iptables -t nat -I PREROUTING -p tcp --dport 8090 -j REDIRECT --to-port 80
+
+5.sudo nano /etc/netplan/*.yaml
+sudo netplan try
