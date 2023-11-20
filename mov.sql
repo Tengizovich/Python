@@ -1,1 +1,0 @@
-SELECT * FROM sem_1.test;
